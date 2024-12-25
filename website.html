@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands-On Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0073e6, #005bb5);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #005bb5;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .about, .projects, .contact, .comments {
+            margin-bottom: 30px;
+        }
+
+        .about, .projects, .contact {
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        .about h2, .projects h2, .contact h2 {
+            text-align: center;
+            color: #005bb5;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about .about-content, .projects .projects-content, .contact .contact-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about .about-content .text, .projects .projects-content .text, .contact .contact-content .text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .about .about-content .text p, .projects .projects-content .text p, .contact .contact-content .text p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .about .about-content .text ul, .projects .projects-content .text ul, .contact .contact-content .text ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .about .about-content .text ul li, .projects .projects-content .text ul li, .contact .contact-content .text ul li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .about .about-content .text ul li strong, .projects .projects-content .text ul li strong, .contact .contact-content .text ul li strong {
+            color: #005bb5;
+        }
+
+        @media (max-width: 768px) {
+            .about .about-content, .projects .projects-content, .contact .contact-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about .about-content .text, .projects .projects-content .text, .contact .contact-content .text {
+                padding-right: 0;
+            }
+        }
+
+        .comment-section {
+            margin-top: 30px;
+        }
+
+        .comment-section h3 {
+            color: #0073e6;
+        }
+
+        .comment-section textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .comment-section button {
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .comment-section button:hover {
+            background-color: #005bb5;
+        }
+
+        .comment-posts {
+            margin-top: 20px;
+        }
+
+        .comment-posts p {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hands-On Solutions</h1>
+        <p>Innovative Solutions for a Better Tomorrow</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#projects">Our Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="text">
+                    <p>At Hands-On Solutions, we believe that innovation is the key to progress. Our team, led by passionate engineers, combines hardware and software expertise to create solutions that truly make a difference.</p>
+                    <p>Our approach is grounded in collaboration, creativity, and a deep commitment to bringing ideas to life. Whether it's designing cutting-edge technology or crafting intelligent systems, we are dedicated to making a positive impact on the world around us.</p>
+                    <p>Meet the team behind our projects:</p>
+                    <ul>
+                        <li><strong>Madhu</strong>: A hardware expert with a knack for building innovative machines and devices.</li>
+                        <li><strong>Sumukh</strong>: A talented software and hardware engineer who excels in combining the two to create seamless solutions.</li>
+                    </ul>
+                    <p>Together, we are committed to turning your ideas into reality and ensuring every project leaves a lasting, positive impact.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Our Projects</h2>
+            <div class="projects-content">
+                <div class="text">
+                    <p>We have successfully completed various exciting projects that combine hardware and software to provide innovative solutions.</p>
+                    <ul>
+                        <li><strong>Building Drones</strong></li>
+                        <li><strong>Building CNC Machines</strong></li>
+                        <li><strong>Autonomous Car Using Raspberry Pi</strong></li>
+                        <li><strong>Animal Pet Tracker</strong></li>
+                        <li><strong>Smart Home Automation</strong> Compatible with All Devices (Amazon, Siri)</li>
+                        <li><strong>Asteroid Detection Using Raspberry Pi</strong></li>
+                        <li><strong>Bike Geofencing</strong></li>
+                        <li><strong>2D to 3D Software</strong></li>
+                        <li><strong>Obstacle Detection Robot</strong></li>
+                        <li><strong>Brain Improving Games</strong></li>
+                        <li><strong>Anti-Security System</strong></li>
+                        <li><strong>Data Duplicate Download Alert System</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="text">
+                    <p>We’d love to hear from you! Reach out to us for collaboration opportunities, project inquiries, or general questions.</p>
+                    <ul>
+                        <li><strong>Madhu (Hardware Engineering)</strong>: +91 9739664810</li>
+                        <li><strong>Sumukh (Software Engineering)</strong>: +91 9986926520</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="comments" class="comment-section">
+            <h3>Comments and Suggestions</h3>
+            <p>We value your feedback! Please leave your comments below to help us improve.</p>
+            <textarea id="comment-text" placeholder="Write your comment here..."></textarea>
+            <button onclick="submitComment()">Submit Comment</button>
+
+            <div id="comments-list" class="comment-posts">
+                <!-- Comments will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hands-On Solutions. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Check if comments are already stored in localStorage
+        const savedComments = JSON.parse(localStorage.getItem('comments')) || [];
+
+        // Function to display all comments
+        function displayComments() {
+            const commentsList = document.getElementById('comments-list');
+            commentsList.innerHTML = '';
+            savedComments.forEach(comment => {
+                const commentElement = document.createElement('p');
+                commentElement.textContent = comment;
+                commentsList.appendChild(commentElement);
+            });
+        }
+
+        // Function to handle comment submission
+        function submitComment() {
+            const commentText = document.getElementById('comment-text').value.trim();
+            if (commentText) {
+                savedComments.push(commentText);
+                localStorage.setItem('comments', JSON.stringify(savedComments));
+                displayComments();
+                document.getElementById('comment-text').value = ''; // Clear the textarea
+            }
+        }
+
+        // Display comments on page load
+        window.onload = displayComments;
+    </script>
+</body>
+</html>
